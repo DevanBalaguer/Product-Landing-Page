@@ -1,20 +1,19 @@
 html {
     scroll-behavior: smooth;
-    margin: auto;
+    margin: 0;
   } 
   
   /*header and Nav*/
   header {
     position: fixed;
     display: flex;
-    top: 0px;
-    width: 100%;
-    height: 100px;
-    min-height: 75px;
     justify-content: space-around;
     align-items: center;
     background-color: 	#d1b394;
     z-index:1; 
+    width:100vw;
+    top: 0;
+    left: 0;
   }
   
   #header-img{
@@ -26,17 +25,13 @@ html {
   }
   
   nav > ul {
-    width: 35vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
-  }
-  
-  @media (max-width: 650px) {
-    nav > ul {
-      flex-direction: column;
-    }
+    column-gap: 20px;
+    font-weight: 700;
+    padding:0;
   }
   
   nav a{
@@ -55,19 +50,14 @@ html {
   body {
     background-color: #eee;
     font-family: 'Lato', sans-serif;
+
   }
+
   
   h1{
     display: flex;
     Justify-content: center;
     margin-bottom: 10px;
-  }
-  
-  @media (max-width: 650px){
-    h1{
-      justify-content: center;
-      text-align: center;
-    }
   }
   
   form{
@@ -104,6 +94,9 @@ html {
   #Features {
     margin-top: 30px;
     margin-bottom: 20px;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
    .grid {
@@ -145,17 +138,17 @@ html {
     margin-left: auto;
     margin-right: auto;
   }
+
   
   #Our_Mission{
     margin-top: 30px;
     margin-bottom: 20px;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
-  @media (max-width: 650px) {
-  .icon {
-      height: 75px;
-    }
-  }
+
 
   /*Pricing*/
   #Pricing {
@@ -208,17 +201,7 @@ html {
   }
   
   
-  @media (max-width: 650px) {
-    #pricing {
-      flex-direction: column;
-    }
-    .product {
-      max-width: 300px;
-      width: 100%;
-      margin: 0 auto;
-      margin-bottom: 10px;
-    }
-  }
+
   
   /*FOOTER*/
   
@@ -251,3 +234,68 @@ html {
     color: #444;
   }
   
+/*Responsive Design*/
+
+  @media only screen and (max-width: 400px) {
+
+    iframe{
+      width: 300px;
+      margin-top: 100px;
+    }
+    nav > ul {
+      flex-direction: column;
+      padding-right: 40px;
+    }
+
+    h1{
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .icon {
+        height: 75px;
+      }
+   
+    #pricing {
+      flex-direction: column
+    }
+    .product {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+  }
+    
+  #Our_Mission{
+    margin-top: 100px;
+ 
+  }
+}
+
+  @media only screen and (min-width: 401px) and (max-width: 800px) {
+
+    header {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    h1{
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .icon {
+        height: 75px;
+      }
+   
+    #pricing {
+      flex-direction: column;
+    }
+    .product {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
