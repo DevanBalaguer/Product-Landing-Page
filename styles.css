@@ -1,0 +1,253 @@
+html {
+    scroll-behavior: smooth;
+    margin: auto;
+  } 
+  
+  /*header and Nav*/
+  header {
+    position: fixed;
+    display: flex;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    min-height: 75px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: 	#d1b394;
+    z-index:1; 
+  }
+  
+  #header-img{
+    height: 100px;
+  }
+  
+  .nav-link{
+    text-decoration: none;
+  }
+  
+  nav > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+  }
+  
+  @media (max-width: 650px) {
+    nav > ul {
+      flex-direction: column;
+    }
+  }
+  
+  nav a{
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+  
+  a:hover{
+    color: #86592d;
+    cursor: pointer;
+  }
+  
+  /*Title and Email*/
+  body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  h1{
+    display: flex;
+    Justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 650px){
+    h1{
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  
+  form{
+    display: flex;
+    justify-content: center;
+  }
+  
+  #submit{
+    margin-left: 10px;
+    border-radius: 25px;
+  }
+  
+  #submit:hover{
+    background-color: #86592d;
+    color:#fff;
+    border-radius: 25px;
+  }
+
+  main {
+    position: relative;
+    top: 150px
+  }
+  
+  /*Features*/
+  #Features .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+  }
+  
+  #Features {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+   .grid {
+     display: flex;
+   }
+  
+   #Features .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: #86592d;
+  }
+  
+  
+  /*Our Mission*/
+
+  #Our_Mission .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+  }
+
+  #Our_Mission .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: #86592d;
+  }
+  
+  iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #Our_Mission{
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 650px) {
+  .icon {
+      height: 75px;
+    }
+  }
+
+  /*Pricing*/
+  #Pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: auto;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+  
+  .product > .level {
+    background-color: #d1b394;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .product > h2 {
+    margin-top: 15px;
+  }
+  
+  .product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #86592d;
+    font-weight: 400;
+    color: white;
+  }
+  
+  .product > button:hover {
+    background-color: black;
+    transition: background-color 1s;
+  }
+
+  .product li{
+    list-style: none;
+    text-align: left;
+  }
+  
+  
+  @media (max-width: 650px) {
+    #pricing {
+      flex-direction: column;
+    }
+    .product {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /*FOOTER*/
+  
+  footer {
+    margin-top: 30px;
+    background-color: #d1b394;
+    padding: 20px;
+  }
+  
+  footer > ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+  }
+  
+  footer > ul > li {
+    padding: 0 10px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+  }
+  
